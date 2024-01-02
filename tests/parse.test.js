@@ -29,3 +29,11 @@ test(
         testParseExpression('/example foo bar foo_bar', 'example(foo,bar,foo_bar)');
     }
 );
+
+test(
+    'parses command call expression within parenthesis',
+    async () => {
+        testParseExpression('(/add x y)', '(add(x,y))');
+        testParseExpression('(/example foo bar foo_bar)', '(example(foo,bar,foo_bar))');
+    }
+);
