@@ -11,6 +11,7 @@ async function testParseExpression(input, expectedOutput) {
 test(
     'parses literal expression',
     async () => {
+        testParseExpression('3', '3');
         testParseExpression('420', '420');
     }
 );
@@ -18,6 +19,8 @@ test(
 test(
     'parses math expression',
     async () => {
+        testParseExpression('1+22*333', '1+22*333');
+        testParseExpression('1/22-333', '1/22-333');
         testParseExpression('10 + 5 / 3', '10+5/3');
         testParseExpression('10 * 5 - 3', '10*5-3');
     }
