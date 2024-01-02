@@ -1,0 +1,5 @@
+command /main => 0
+
+let x
+
+x = (/create_entity)

@@ -1,0 +1,38 @@
+{
+  "name": "@carlosplus/carlosplus-parser",
+  "version": "0.1.0",
+  "description": "Carlos+ Programming Language",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "npm run build-parser",
+    "build-parser": "npm run build-parser-expression",
+    "build-parser-command-definition": "nearleyc src/grammar/command_definition.ne -o src/grammar/command_definition.js",
+    "build-parser-expression": "nearleyc src/grammar/expression.ne -o src/grammar/expression.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toast-pigeon/carlosplus-prototype.git"
+  },
+  "keywords": [
+    "carlos+",
+    "carlosplus",
+    "carlos",
+    "plus",
+    "programming",
+    "scripting",
+    "language"
+  ],
+  "author": "Ashlynn Juniper",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/toast-pigeon/carlosplus-prototype/issues"
+  },
+  "homepage": "https://github.com/toast-pigeon/carlosplus-prototype#readme",
+  "dependencies": {
+    "nearley": "^2.20.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
