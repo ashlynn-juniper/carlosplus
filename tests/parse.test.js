@@ -12,6 +12,7 @@ test(
     'parses math expression',
     async () => {
         testParseExpression('10 + 5 / 3', '10+5/3');
+        testParseExpression('10 * 5 - 3', '10*5-3');
     }
 );
 
@@ -19,6 +20,7 @@ test(
     'parses parenthesis expression',
     async () => {
         testParseExpression('( 10 + 5 / 3 )', '(10+5/3)');
+        testParseExpression('( 10 * 5 - 3 )', '(10*5-3)');
     }
 );
 
