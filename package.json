@@ -1,6 +1,6 @@
 {
-  "name": "@carlosplus/carlosplus-parser",
-  "version": "0.1.0",
+  "name": "@carlosplus/carlosplus",
+  "version": "0.0.2",
   "description": "Carlos+ Programming Language",
   "main": "src/index.js",
   "scripts": {
