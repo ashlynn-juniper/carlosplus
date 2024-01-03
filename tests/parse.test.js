@@ -9,7 +9,7 @@ async function testParseExpression(input, expectedOutput) {
 }
 
 test(
-    'parses literal expression',
+    'parses number literal expression',
     async () => {
         testParseExpression('3', '3');
         testParseExpression('420', '420');
